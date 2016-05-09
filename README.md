@@ -1,5 +1,5 @@
 ## GitBot
-A Facebook messenger chatbot that searches Gitbub repositories for you
+A Simple Facebook messenger chatbot that searches Gitbub repositories for you
 
 ##What can it do?
 - Search Github
