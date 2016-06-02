@@ -18,7 +18,7 @@ A Simple Facebook messenger chatbot that searches Gitbub repositories for you
 - Deploy!
 
 ##Most Challenging
-Working with AWS lambda and the serverless framework
+Working with AWS lambda and the serverless framework...
 
 
 
