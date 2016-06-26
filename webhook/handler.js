@@ -3,14 +3,14 @@
 let axios = require('axios');
 
 module.exports.handler = function(event, context, cb) {
-  let accessToken = 'EAADiFzZC62TgBAKbc0VOZAWqrMjJTJK4T3hXPrKD2tvILd5UqoZC5MXnnpwFba5lXYjkaYZAQRWOeLvTuL7KSDoGdst189vfBQe0qfcoUxaLC3I8tZAxRFLWqQ9hdyQPzOYLWjfpKw8bb33GFZCaGO9Fw6Uu9YwMTER3WjLzZBY3gZDZD';
+  let accessToken = 'EAADiFzZC62TgBAHGFS0fSxSFavhuDoGbQsgaqVgWCSzKj0TCZBNchBcWKFpw8FDho9acwHYZCH7jgORQVpl13l3rqrQXddZAbwHyZAgPtGyHt4JH2LtZC8kZBo2HWrPmG7BpcbEyjDZBtB31ALjsZC6NMnIIDqm5ZBa8qK5nUBGxh07AZDZD';
 
   if (event.method === 'GET') {
     //facebook app verifiction
-    if (event.hubVerifyToken === 'STRONGTOKEN' && event.hubChallenge) {
+    if (event.hubVerifyToken === 'GITBOTTOKEN' && event.hubChallenge) {
       return cb(null, parseInt(event.hubChallenge));
     } else {
-      return cb('Invalid token')
+      return cb('The Token entered is Invalid');
     }
   }
 
